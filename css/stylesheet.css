@@ -1,4 +1,78 @@
 /* flexbox mixins */
 /* styles for andrea's portfolio */
+.portfolio {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  line-height: 1.5;
+  font-size: 16px; }
+
+.portfolio-nav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  border-bottom: solid 2px #000000;
+  padding: 2.5% 5%; }
+  .portfolio-nav .portfolio-nav-link {
+    margin: 0 25px; }
+
+.portfolio-row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 5%; }
+  .portfolio-row .portfolio-icon {
+    border: 2px solid #000000;
+    height: 300px;
+    margin: 1.5%;
+    width: 300px; }
+
+.portfolio-about {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 3% 5%; }
+  .portfolio-about .portfolio-about-title {
+    margin-bottom: 2%; }
+  .portfolio-about .portfolio-about-blurb {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 2%; }
 
 /*# sourceMappingURL=stylesheet.css.map */
