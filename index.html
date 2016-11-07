@@ -3,11 +3,11 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
     <title>Andrea&rsquo;s Portfolio</title>
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/stylesheet.css" rel="stylesheet" />
-
 </head>
 
 <body class="portfolio">
@@ -17,12 +17,12 @@
             <img class="portfolio-nav-title" src="images/about-me.gif" alt="about me" />
         </section>
         <div class="portfolio-nav-links">
-            <a class="portfolio-nav-link" href="#portfolio-row">PORTFOLIO</a>
-            <a class="portfolio-nav-link" href="#portfolio-row">ABOUT/CONTACT</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#portfolio">PORTFOLIO</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#about">ABOUT/CONTACT</a>
         </div>
     </nav>
 
-    <section class="portfolio-row">
+    <section class="portfolio-row" id="portfolio">
         <a class="portfolio-icon" href="#">
             <img class="portfolio-icon-image" src="images/mockup1-screenshot.png" alt="mockup: school landing page" />
             <div class="portfolio-icon-title">Mockup:<br>School Landing Page</div>
@@ -49,20 +49,26 @@
         </a>
     </section>
 
-    <footer class="portfolio-footer">
+    <footer class="portfolio-footer" id="about">
         <section class="portfolio-footer-about">
             <h2 class="portfolio-footer-about-title">ABOUT ANDREA</h2>
             <p class="portfolio-about-blurb">I am a UX/UI Designer in Cambridge, MA. I enjoy solving complex design problems and thrive on teamwork. I have experience with an education startup and have also previously worked in healthcare. My diverse work history gives me a unique perspective on the importance of collaboration and empathy. <a class="portfolio-footer-download-cv" href="#">Download my resume</a></p>
         </section>
         <section class="portfolio-footer-contact">
             <div class="portfolio-footer-social-media">
-                <a class="portfolio-footer-social-media-icon" href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
-                <a class="portfolio-footer-social-media-icon" href="#"><img src="images/dribbble.svg" alt="dribbble"></a>
-                <a class="portfolio-footer-social-media-icon" href="#"><img src="images/github.svg" alt="github"></a>
+                <a class="portfolio-footer-social-media-icon" href="https://www.linkedin.com/in/andrea-leigh-williamson"><img src="images/linkedin.svg" target="_blank" alt="linkedin"></a>
+                <a class="portfolio-footer-social-media-icon" href="https://dribbble.com/AndreaLeigh111"><img src="images/dribbble.svg" target="_blank" alt="dribbble"></a>
+                <a class="portfolio-footer-social-media-icon" href="https://github.com/andrealeigh"><img src="images/github.svg" target="_blank" alt="github"></a>
             </div>
             <h5 class="portfolio-footer-email">leigh.andrea@gmail.com</h5>
         </section>
     </footer>
+
+
+		<script src="js/smooth-scroll.min.js"></script>
+		<script>
+			smoothScroll.init();
+		</script>
 </body>
 
 </html>
