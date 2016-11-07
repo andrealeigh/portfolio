@@ -9,6 +9,7 @@
   -ms-flex-direction: column;
   -moz-flex-direction: column;
   flex-direction: column;
+  color: #1f1f1f;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   font-size: 16px; }
@@ -18,6 +19,10 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -moz-flex-direction: row;
@@ -27,16 +32,47 @@
   -moz-justify-content: space-between;
   justify-content: space-between;
   border-bottom: solid 2px #ff008c;
-  padding: 2.5% 5%; }
+  padding: 5% 5%;
+  position: relative; }
+  .portfolio-nav:after {
+    content: "";
+    background: url("../images/graffiti-alley.jpg") no-repeat left;
+    background-size: cover;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .portfolio-nav .portfolio-nav-left-side {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column; }
   .portfolio-nav .portfolio-nav-name {
-    font-size: 24px;
-    font-weight: 700; }
+    color: #1f1f1f;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 2%;
+    text-shadow: 0px 0px 10px #ffffff; }
+  .portfolio-nav .portfolio-nav-title {
+    width: 445px; }
   .portfolio-nav .portfolio-nav-link {
+    background-color: rgba(255, 255, 255, 0.6);
     border-bottom: none;
-    transition: ease-out 0.5s;
-    color: #000000;
-    margin: 0 25px; }
+    transition: ease-out 0.3s;
+    color: #1f1f1f;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 25px;
+    padding: 7px; }
     .portfolio-nav .portfolio-nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.8);
       border-bottom: solid 6px #ff008c;
       color: #ff008c; }
 
@@ -57,9 +93,9 @@
   -ms-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 5%; }
+  margin: 7%; }
   .portfolio-row .portfolio-icon {
-    border: 2px solid #000000;
+    border: 2px solid #1f1f1f;
     height: 300px;
     margin: 1.5%;
     position: relative;
@@ -67,17 +103,17 @@
     width: 300px; }
     .portfolio-row .portfolio-icon .portfolio-icon-image {
       opacity: 1;
-      transition: ease-out 0.5s;
+      transition: ease-out 0.3s;
       width: 300px; }
     .portfolio-row .portfolio-icon .portfolio-icon-title {
       bottom: 114px;
-      color: #000000;
+      color: #1f1f1f;
       font-size: 24px;
       font-weight: 700;
       opacity: 0;
       position: absolute;
       text-align: center;
-      transition: ease-out 0.5s;
+      transition: ease-out 0.3s;
       width: 100%; }
     .portfolio-row .portfolio-icon:hover {
       border-color: #ff008c; }
@@ -115,6 +151,7 @@
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column;
+    color: #eaeaea;
     max-width: 660px; }
   .portfolio-footer .portfolio-footer-about-title {
     color: #ff008c;
