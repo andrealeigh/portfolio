@@ -155,9 +155,9 @@
     max-width: 660px; }
   .portfolio-footer .portfolio-footer-about-title {
     color: #ff008c;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
-    margin-bottom: 2%; }
+    margin-bottom: 20px; }
   .portfolio-footer .portfolio-footer-download-cv {
     border-bottom: solid 1px #ffffff;
     color: #ffffff;
@@ -188,17 +188,18 @@
   .portfolio-footer .portfolio-footer-social-media-icon {
     background-color: #1f1f1f;
     border-radius: 50%;
-    height: 85px;
-    margin: 0 25px 25px 0;
+    height: 40px;
+    margin: 0 25px 15px 0;
     transition: ease-out 0.3s;
-    width: 85px; }
+    width: 40px; }
     .portfolio-footer .portfolio-footer-social-media-icon:hover {
       background-color: #ff008c;
-      width: 85px;
-      height: 85px; }
+      width: 40px;
+      height: 40px; }
       .portfolio-footer .portfolio-footer-social-media-icon:hover:first-of-type {
         border-radius: 10px; }
   .portfolio-footer .portfolio-footer-email {
+    color: #eaeaea;
     font-size: 28px;
     font-weight: 100; }
 
