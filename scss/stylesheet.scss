@@ -110,11 +110,15 @@
     @include flex-wrap(wrap);
     margin: 7%;
     .portfolio-icon {
+        background-color: #ffffff;
+        padding: 0;
+        box-sizing: content-box;
         border: 2px solid #1f1f1f;
+        cursor: pointer;
         height: 300px;
         margin: 1.5%;
         position: relative;
-        transition: ease-out 0.5s;
+        transition: ease-out 0.3s;
         width: 300px;
         .portfolio-icon-image {
             opacity: 1;
@@ -139,6 +143,102 @@
         }
     }
 
+}
+
+.portfolio-modal {
+    animation-duration: 0.4s;
+    animation-name: fadeIn;
+    background-color: rgba(255,255,255,0.8);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .portfolio-modal-content {
+        animation-duration: 0.4s;
+        animation-name: slideIn;
+        background-color: #ffffff;
+        bottom: 0;
+        border: 2px solid #1f1f1f;
+        height: 100%;
+        left: 0;
+        max-width: 600px;
+        position: fixed;
+    }
+    .portfolio-modal-header {
+        @include flex;
+        @include flex-direction(row);
+        @include flex-align-items(center);
+        @include flex-justify-content(space-between);
+        background-color: #1f1f1f;
+        color: #eaeaea;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 25px;
+    }
+    .portfolio-modal-close-icon {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
+        transition: ease-out 0.3s;
+        &:hover {
+            color: #ff008c;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .portfolio-modal-body {
+        padding: 25px;
+    }
+    .portfolio-modal-gif {
+        border: 2px solid #1f1f1f;
+        margin-bottom: 15px;
+    }
+    .portfolio-modal-paragraph {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .portfolio-modal-link {
+        border-bottom: 2px solid #1f1f1f;
+        color: #1f1f1f;
+        font-size: 16px;
+        margin: 0 10px 10px 0;
+        transition: ease-out 0.3s;
+        width: 168px;
+        &:last-of-type {
+            width: 235px;
+        }
+        &:hover {
+            border-bottom: 6px solid #ff008c;
+            color: #ff008c;
+        }
+    }
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 .portfolio-footer {
