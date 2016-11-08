@@ -138,7 +138,7 @@
         }
         &:hover {
             border-color: #ff008c;
-            .portfolio-icon-image {opacity: 0.2;}
+            .portfolio-icon-image {opacity: 0.1;}
             .portfolio-icon-title {opacity: 1;}
         }
     }
@@ -152,7 +152,6 @@
     display: none;
     height: 100%;
     left: 0;
-    overflow: scroll;
     position: fixed;
     top: 0;
     width: 100%;
@@ -166,6 +165,7 @@
         height: 100%;
         left: 0;
         max-width: 600px;
+        overflow: scroll;
         position: fixed;
     }
     .portfolio-modal-header {
@@ -219,8 +219,6 @@
 }
 
 
-
-/* Add Animation */
 @-webkit-keyframes slideIn {
     from {left: -300px; opacity: 0}
     to {left: 0; opacity: 1}
@@ -254,6 +252,7 @@
         @include flex-direction(column);
         color: #eaeaea;
         max-width: 645px;
+        padding-right: 5%;
     }
     .portfolio-footer-about-title {
         color: #ff008c;
@@ -303,5 +302,62 @@
         color: #eaeaea;
         font-size: 28px;
         font-weight: 100;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .portfolio-nav {
+        .portfolio-nav-links {
+            @include flex;
+            @include flex-direction(column);
+        }
+        .portfolio-nav-link {
+            margin: 0 0 10px 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .portfolio-footer {
+        @include flex-direction(column);
+        .portfolio-footer-about-blurb:last-of-type  {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .portfolio-nav {
+        @include flex-direction(column);
+        @include flex-align-items(flex-start);
+        .portfolio-nav-left-side {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio-modal {
+        .portfolio-modal-gif {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .portfolio-nav {
+        @include flex-align-items(center);
+        .portfolio-nav-name {
+            font-size: 28px;
+        }
+        .portfolio-nav-title {
+            display: none;
+        }
+    }
+    .portfolio-footer {
+        .portfolio-footer-about-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
     }
 }
