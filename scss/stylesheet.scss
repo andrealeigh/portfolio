@@ -253,13 +253,16 @@
         @include flex;
         @include flex-direction(column);
         color: #eaeaea;
-        max-width: 660px;
+        max-width: 645px;
     }
     .portfolio-footer-about-title {
         color: #ff008c;
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 20px;
+    }
+    .portfolio-footer-about-blurb {
+        padding-bottom: 15px;
     }
     .portfolio-footer-download-cv {
         border-bottom: solid 1px #ffffff;
