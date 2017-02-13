@@ -103,6 +103,31 @@
     }
 }
 
+/* ccn page styles */
+
+.portfolio-ccn-body {
+    margin: 50px 10%;
+    .portfolio-ccn-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .portfolio-ccn-row {
+        @include flex;
+        @include flex-direction(row);
+        margin-bottom: 30px;
+    }
+    .portfolio-ccn-header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 10%;
+        min-width: 200px;
+    }
+}
+
+
+/* end ccn page styles */
+
 .portfolio-row {
     @include flex;
     @include flex-direction(row);
