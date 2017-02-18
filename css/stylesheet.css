@@ -93,11 +93,24 @@
     -moz-flex-direction: row;
     flex-direction: row;
     margin-bottom: 30px; }
+  .portfolio-ccn-body .portfolio-ccn-intro-header {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10%;
+    min-width: 200px; }
+  .portfolio-ccn-body .portfolio-ccn-intro-column {
+    margin-right: 10%; }
   .portfolio-ccn-body .portfolio-ccn-header {
     font-size: 20px;
     font-weight: 700;
     margin-right: 10%;
     min-width: 200px; }
+  .portfolio-ccn-body .portfolio-ccn-column:first-of-type {
+    margin-right: 5%; }
+  .portfolio-ccn-body .portfolio-ccn-design-img {
+    width: 250px; }
+  .portfolio-ccn-body .portfolio-ccn-blurb:first-of-type {
+    margin-bottom: 15px; }
 
 /* end ccn page styles */
 .portfolio-row {

@@ -117,11 +117,33 @@
         @include flex-direction(row);
         margin-bottom: 30px;
     }
+    .portfolio-ccn-intro-header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 10%;
+        min-width: 200px;
+    }
+    .portfolio-ccn-intro-column {
+        margin-right: 10%;
+    }
     .portfolio-ccn-header {
         font-size: 20px;
         font-weight: 700;
         margin-right: 10%;
         min-width: 200px;
+    }
+    .portfolio-ccn-column {
+        &:first-of-type {
+            margin-right: 5%;
+        }
+    }
+    .portfolio-ccn-design-img {
+        width: 250px;
+    }
+    .portfolio-ccn-blurb {
+        &:first-of-type {
+            margin-bottom: 15px;
+        }
     }
 }
 
