@@ -103,6 +103,31 @@
     }
 }
 
+/* process page styles */
+
+.portfolio-process-body {
+    @include flex;
+    @include flex-direction(column);
+    margin: 50px 10%;
+    .portfolio-process-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .portfolio-process-row {
+        @include flex;
+        @include flex-direction(row);
+        margin-bottom: 25px;
+    }
+    .portfolio-process-column {
+        @include flex;
+        @include flex-direction(column);
+    }
+}
+
+/* end process page styles */
+
+
 /* ccn page styles */
 
 .portfolio-ccn-body {
@@ -129,16 +154,24 @@
     .portfolio-ccn-header {
         font-size: 20px;
         font-weight: 700;
+        left: 15px;
         margin-right: 10%;
         min-width: 200px;
+        position: absolute;
+        top: 15px;
+        z-index: 1;
     }
     .portfolio-ccn-column {
         &:first-of-type {
             margin-right: 5%;
+            position: relative;
         }
     }
     .portfolio-ccn-design-img {
+        border: 3px solid #000000;
+        opacity: 0.4;
         width: 250px;
+        z-index: -1;
     }
     .portfolio-ccn-blurb {
         &:first-of-type {
