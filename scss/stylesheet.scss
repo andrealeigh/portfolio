@@ -114,14 +114,42 @@
         font-weight: 700;
         margin-bottom: 25px;
     }
+    .portfolio-process-blurb-intro {
+        margin-bottom: 20px;
+    }
     .portfolio-process-row {
         @include flex;
         @include flex-direction(row);
         margin-bottom: 25px;
     }
+    .portfolio-process-design-img {
+        border: solid 3px #000000;
+        margin-right: 5%;
+    }
     .portfolio-process-column {
         @include flex;
         @include flex-direction(column);
+    }
+    .portfolio-process-header {
+        border-bottom: solid 2px #b0e9f7;
+        color: #0062ff;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+    .portfolio-process-blurb {
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .portfolio-process-list {
+        margin-left: 15px;
+    }
+    .portfolio-process-list-item {
+        margin-bottom: 10px;
+    }
+    .portfolio-process-list-item-emphasis {
+        font-weight: 700;
     }
 }
 

@@ -91,6 +91,8 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px; }
+  .portfolio-process-body .portfolio-process-blurb-intro {
+    margin-bottom: 20px; }
   .portfolio-process-body .portfolio-process-row {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -101,6 +103,9 @@
     -moz-flex-direction: row;
     flex-direction: row;
     margin-bottom: 25px; }
+  .portfolio-process-body .portfolio-process-design-img {
+    border: solid 3px #000000;
+    margin-right: 5%; }
   .portfolio-process-body .portfolio-process-column {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -110,6 +115,22 @@
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column; }
+  .portfolio-process-body .portfolio-process-header {
+    border-bottom: solid 2px #b0e9f7;
+    color: #0062ff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 5px; }
+  .portfolio-process-body .portfolio-process-blurb {
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .portfolio-process-body .portfolio-process-list {
+    margin-left: 15px; }
+  .portfolio-process-body .portfolio-process-list-item {
+    margin-bottom: 10px; }
+  .portfolio-process-body .portfolio-process-list-item-emphasis {
+    font-weight: 700; }
 
 /* end process page styles */
 /* ccn page styles */
