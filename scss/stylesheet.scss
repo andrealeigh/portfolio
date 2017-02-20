@@ -108,19 +108,38 @@
 .portfolio-process-body {
     @include flex;
     @include flex-direction(column);
-    margin: 50px 10%;
+    .portfolio-process-intro {
+        @include flex;
+        @include flex-direction(column);
+        @include flex-align-items(center);
+        background-color: #1f1f1f;
+        border-bottom: solid 3px #0062ff;
+        color: #eaeaea;
+        margin-bottom: 50px;
+        padding: 50px 10%;
+    }
     .portfolio-process-title {
+        color: #ff008c;
         font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     .portfolio-process-blurb-intro {
-        margin-bottom: 20px;
+        font-size: 16px;
+        max-width: 680px;
+        &:first-of-type{
+            margin-bottom: 20px;
+        }
     }
     .portfolio-process-row {
         @include flex;
         @include flex-direction(row);
-        margin-bottom: 25px;
+        margin: 25px 10%;
+        &:first-of-type {
+            margin-top: 50px;
+        }
+        &:last-of-type {
+            margin-bottom: 75px;
+        }
     }
     .portfolio-process-design-img {
         border: solid 3px #000000;
@@ -348,8 +367,8 @@
         @include flex;
         @include flex-direction(column);
         color: #eaeaea;
-        max-width: 645px;
-        padding-right: 5%;
+        max-width: 660px;
+        padding-right: 4.5%;
     }
     .portfolio-footer-about-title {
         color: #ff008c;
