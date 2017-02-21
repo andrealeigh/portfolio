@@ -209,55 +209,61 @@
         @include flex;
         @include flex-align-self(center);
         font-size: 18px;
-        max-width: 700px;
+        margin-bottom: 35px;
+        max-width: 735px;
         text-align: center;
     }
-    .portfolio-ccn-link {
-        background-color: #1b1464;
-        padding: 50px 10%;
-        .portfolio-ccn-screenshot {
-            @include flex;
-            border: solid 3px #ffffff;
-            cursor: pointer;
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 1;
-            transition: ease-out 0.3s;
-            width: 100%;
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-    }
-    .portfolio-ccn-row {
+    .portfolio-ccn-screenshot {
         @include flex;
-        @include flex-direction(row);
-        margin-bottom: 30px;
-    }
-    .portfolio-ccn-intro-header {
-        font-size: 20px;
-        font-weight: 700;
-        margin-right: 5%;
-        min-width: 200px;
-    }
-    .portfolio-ccn-intro-column {
-        margin-right: 10%;
-    }
-    .portfolio-ccn-header {
-        font-size: 20px;
-        font-weight: 700;
-        margin-right: 10%;
-        min-width: 200px;
-    }
-    .portfolio-ccn-column {
-        &:first-of-type {
-            margin-right: 5%;
+        border: solid 3px #ffffff;
+        cursor: pointer;
+        max-width: 750px;
+        margin: 0 auto;
+        opacity: 1;
+        transition: ease-out 0.3s;
+        width: 100%;
+        &:hover {
+            opacity: 0.5;
         }
     }
-    .portfolio-ccn-blurb {
-        &:first-of-type {
-            margin-bottom: 15px;
-        }
+    .portfolio-ccn-process {
+        @include flex;
+        @include flex-direction(column);
+        margin: 50px auto;
+        max-width: 750px;
+    }
+    .portfolio-ccn-process-title {
+        border-bottom: solid 2px #ff008c;
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .portfolio-ccn-process-blurb {
+        margin-bottom: 15px;
+    }
+    .portfolio-ccn-process-blurb-emphasis {
+        font-weight: 700;
+    }
+    .portfolio-ccn-process-header {
+        color: #ff008c;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .portfolio-ccn-process-list {
+        margin-left: 30px;
+    }
+    .portfolio-ccn-process-list-item {
+        margin-bottom: 10px;
+    }
+    .portfolio-ccn-process-img {
+        border: solid 3px #000000;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .portfolio-ccn-process-design-img {
+        width: 200px;
     }
 }
 
