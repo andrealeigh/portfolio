@@ -253,10 +253,77 @@
     margin-bottom: 10px; }
   .portfolio-ccn-body .portfolio-ccn-process-img {
     border: solid 3px #000000;
-    margin-bottom: 25px;
+    margin: 25px 0;
     width: 100%; }
+  .portfolio-ccn-body .portfolio-ccn-process-design-visuals {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around; }
+  .portfolio-ccn-body .portfolio-ccn-process-design-visuals-column {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    position: relative; }
+  .portfolio-ccn-body .portfolio-ccn-process-design-visuals-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .portfolio-ccn-body .portfolio-ccn-process-color-swatches {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    width: 150px; }
+    .portfolio-ccn-body .portfolio-ccn-process-color-swatches:first-of-type {
+      margin-bottom: 10px; }
+  .portfolio-ccn-body .portfolio-ccn-process-color {
+    border: solid 2px #000000;
+    height: 65px;
+    width: 65px; }
+  .portfolio-ccn-body .color-1 {
+    background-color: #1b1464; }
+  .portfolio-ccn-body .color-2 {
+    background-color: #1552ff; }
+  .portfolio-ccn-body .color-3 {
+    background-color: #ff00ff; }
+  .portfolio-ccn-body .color-4 {
+    background-color: #ffffff; }
   .portfolio-ccn-body .portfolio-ccn-process-design-img {
     width: 200px; }
+  .portfolio-ccn-body .portfolio-ccn-process-capitol-bg-subtitle {
+    bottom: 0;
+    color: #ffffff;
+    position: absolute; }
 
 /* end ccn page styles */
 .portfolio-row {
