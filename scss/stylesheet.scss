@@ -267,6 +267,7 @@
         @include flex-align-items(flex-start);
         @include flex-direction(row);
         @include flex-justify-content(space-around);
+        margin-bottom: 15px;
     }
     .portfolio-ccn-process-design-visuals-column {
         @include flex;
@@ -309,8 +310,10 @@
         width: 200px;
     }
     .portfolio-ccn-process-capitol-bg-subtitle {
-        bottom: 0;
+        bottom: 5px;
         color: #ffffff;
+        font-size: 12px;
+        font-weight: 300;
         position: absolute;
     }
 }

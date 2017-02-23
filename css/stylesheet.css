@@ -271,7 +271,8 @@
     -webkit-justify-content: space-around;
     -ms-justify-content: space-around;
     -moz-justify-content: space-around;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-bottom: 15px; }
   .portfolio-ccn-body .portfolio-ccn-process-design-visuals-column {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -321,8 +322,10 @@
   .portfolio-ccn-body .portfolio-ccn-process-design-img {
     width: 200px; }
   .portfolio-ccn-body .portfolio-ccn-process-capitol-bg-subtitle {
-    bottom: 0;
+    bottom: 5px;
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
     position: absolute; }
 
 /* end ccn page styles */
