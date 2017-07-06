@@ -129,21 +129,20 @@
 }
 
 .portfolio-portfolio {
-    background-color: #2f2f2f;
-    color: #eaeaea;
-    padding: 50px 10%;
+    background-color: #ffffff;
+    color: #1f1f1f;
+    padding: 75px 10%;
     @include flex;
     @include flex-direction(column);
     .portfolio-portfolio-header {
         color: #ff008c;
         font-size: 30px;
-        font-weight: 300;
-        margin-bottom: 10px;
+        font-weight: 700;
     }
     .portfolio-portfolio-row {
         @include flex;
         @include flex-direction(row);
-        @include flex-align-items(center);
+        @include flex-align-items(flex-start);
     }
     .portfolio-portfolio-column:first-of-type {
         margin-right: 5%;
@@ -165,20 +164,19 @@
 }
 
 .portfolio-philosophy {
-    background-color: #3f3f3f;
-    padding: 50px 10%;
+    background-color: #1f1f1f;
+    padding: 75px 10%;
     @include flex;
     @include flex-direction(column);
     .portfolio-philosophy-header {
         color: #ff008c;
         font-size: 30px;
         font-weight: 300;
-        margin-bottom: 20px;
     }
     .portfolio-philosophy-row {
         @include flex;
         @include flex-direction(row);
-        @include flex-align-items(center);
+        @include flex-align-items(flex-end);
     }
     .portfolio-philsophy-column:first-of-type {
         margin-right: 5%;
@@ -194,76 +192,54 @@
 }
 
 .portfolio-icon {
-        background-color: #ffffff;
+        background-color: #1f1f1f;
         border: 3px solid #1f1f1f;
         box-sizing: content-box;
         cursor: pointer;
-        height: 300px;
+        height: 250px;
         margin: 1.5%;
+        opacity: 1;
         padding: 0;
         position: relative;
         transition: ease-out 0.3s;
-        width: 300px;
+        width: 325px;
+        &:hover {
+            border: 3px solid #ff008c;
+            opacity: 0.8;
+        }
         .portfolio-icon-image {
-            opacity: 0.2;
             cursor: pointer;
             transition: ease-out 0.3s;
             width: 300px;
         }
-        .portfolio-icon-title {
-            bottom: 114px;
-            color: #1f1f1f;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 1.5;
-            opacity: 1;
-            cursor: pointer;
-            position: absolute;
-            text-align: center;
-            transition: ease-out 0.3s;
-            width: 100%;
-        }
-        &:hover {
-            border: 3px solid #ff008c;
-            .portfolio-icon-image {opacity: 0.4;}
-            .portfolio-icon-title {color: #000000;}
-        }
+}
+
+.process-icon {
+    background-color: #ffffff;
 }
 
 
 /* styles for portfolio page */
 
-.portfolio-trinetx {
+.portfolio-trinetx, .portfolio-testive-projects, .portfolio-icons {
+    background-color: #ffffff;
+    color: #1f1f1f;
+    padding: 50px 10%;
+    @include flex;
+    @include flex-direction(column);
+    .portfolio-piece-header {
+        font-weight: 700;
+    }
+    .portfolio-piece-blurb-emphasis {
+        font-weight: 700;
+    }
+    .portfolio-piece-icon {
+        background-color: #1f1f1f;
+    }
+}
+
+.portfolio-school-analytics, .portfolio-call-congress {
     background-color: #1f1f1f;
-    padding: 50px 10%;
-    @include flex;
-    @include flex-direction(column);
-}
-
-.portfolio-school-analytics {
-    background-color: #2f2f2f;
-    padding: 50px 10%;
-    @include flex;
-    @include flex-direction(column);
-}
-
-.portfolio-testive-projects {
-    background-color: #3f3f3f;
-    padding: 50px 10%;
-    @include flex;
-    @include flex-direction(column);
-}
-
-.portfolio-call-congress {
-    background-color: #4f4f4f;
-    padding: 50px 10%;
-    @include flex;
-    @include flex-direction(column);
-}
-
-
-.portfolio-icons {
-    background-color: #5f5f5f;
     padding: 50px 10%;
     @include flex;
     @include flex-direction(column);
@@ -277,20 +253,21 @@
         border: 3px solid #1f1f1f;
         box-sizing: content-box;
         cursor: pointer;
-        height: 300px;
+        height: 250px;
         margin: 1.5%;
         opacity: 1;
         padding: 0;
         position: relative;
         transition: ease-out 0.3s;
-        width: 300px;
+        width: 325px;
         &:hover {
             border: 3px solid #ff008c;
             opacity: 0.8;
         }
 }
 .portfolio-piece-icon-image {
-    width: 250px;
+    cursor: pointer;
+    width: 300px;
 }
 .portfolio-piece-header {
     color: #ff008c;
@@ -305,9 +282,17 @@
 }
 .portfolio-piece-column:first-of-type {
     margin-right: 5%;
+    margin-top: 15px;
 }
 .portfolio-piece-blurb {
     margin-bottom: 15px;
+}
+.portfolio-piece-blurb-emphasis {
+    color: #ff008c;
+    font-weight: 300;
+}
+.portfolio-piece-blurb-emphasis-black {
+    font-weight: 700;
 }
 .portfolio-piece-list {
     margin-left: 30px;
@@ -667,42 +652,27 @@
 
 .portfolio-footer {
     @include flex;
-    @include flex-direction(row);
-    @include flex-align-items(flex-start);
-    @include flex-justify-content(space-between);
-    background-color: #1f1f1f;
+    @include flex-direction(column);
+    border-top: solid 2px #ff008c;
     color: #eaeaea;
     padding: 7%;
-    .portfolio-footer-about {
-        @include flex;
-        @include flex-direction(column);
-        color: #eaeaea;
-        max-width: 660px;
-        padding-right: 4.5%;
+    position: relative;
+    &:after {
+        background: url('../images/graffiti-alley.jpg') no-repeat left;
+        background-size: cover;
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0.15;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
     }
     .portfolio-footer-about-title {
         color: #ff008c;
         font-size: 30px;
         font-weight: 700;
-        margin-bottom: 20px;
-    }
-    .portfolio-footer-about-blurb {
-        padding-bottom: 15px;
-    }
-    .portfolio-footer-download-cv {
-        border-bottom: solid 1px #ffffff;
-        color: #ffffff;
-        font-size: 16px;
-        transition: ease-out 0.3s;
-        width: 195px;
-        &:hover {
-            border-bottom: solid 6px #ff008c;
-            color: #ff008c;
-        }
-    }
-    .portfolio-footer-contact {
-        @include flex;
-        @include flex-direction(column);
     }
     .portfolio-footer-social-media {
         @include flex;
@@ -726,9 +696,23 @@
     }
     .portfolio-footer-email {
         color: #eaeaea;
-        font-size: 28px;
-        font-weight: 100;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
     }
+    .portfolio-about-resume-link {
+        color: #eaeaea;
+        cursor: pointer;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        transition: ease-out 0.3s;
+        width: 170px;
+        &:hover {
+            color: #ff008c;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 975px) {
