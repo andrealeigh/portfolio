@@ -139,28 +139,6 @@
         font-size: 30px;
         font-weight: 700;
     }
-    .portfolio-portfolio-row {
-        @include flex;
-        @include flex-direction(row);
-        @include flex-align-items(flex-start);
-    }
-    .portfolio-portfolio-column:first-of-type {
-        margin-right: 5%;
-    }
-    .portfolio-portfolio-blurb {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .portfolio-portfolio-list {
-        margin-left: 30px;
-    }
-    .portfolio-portfolio-list-item {
-        margin-bottom: 5px;
-        font-size: 16px;
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
 }
 
 .portfolio-philosophy {
@@ -172,22 +150,30 @@
         color: #ff008c;
         font-size: 30px;
         font-weight: 300;
+
     }
-    .portfolio-philosophy-row {
-        @include flex;
-        @include flex-direction(row);
-        @include flex-align-items(flex-end);
-    }
-    .portfolio-philsophy-column:first-of-type {
-        margin-right: 5%;
-    }
-    .portfolio-philosophy-blurb {
-        margin-bottom: 15px;
-    }
-    .portfolio-philosophy-blurb-emphasis {
-        color: #ff008c;
-        font-size: 20px;
-        font-weight: 300;
+}
+
+.portfolio-content-row {
+    @include flex;
+    @include flex-direction(row);
+    @include flex-align-items(flex-start);
+}
+.portfolio-content-column:first-of-type {
+    margin-right: 5%;
+}
+.portfolio-content-blurb {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.portfolio-content-list {
+    margin-left: 30px;
+}
+.portfolio-content-list-item {
+    margin-bottom: 5px;
+    font-size: 16px;
+    &:last-of-type {
+        margin-bottom: 0;
     }
 }
 
@@ -673,6 +659,7 @@
         color: #ff008c;
         font-size: 30px;
         font-weight: 700;
+        margin-bottom: 5px;
     }
     .portfolio-footer-social-media {
         @include flex;
@@ -681,19 +668,20 @@
     .portfolio-footer-social-media-icon {
         background-color: #1f1f1f;
         border-radius: 50%;
-        height: 40px;
+        height: 46px;
         margin: 0 25px 15px 0;
         transition: ease-out 0.3s;
-        width: 40px;
+        width: 46px;
         &:hover {
             background-color: #ff008c;
-            height: 40px;
-            width: 40px;
+            height: 46px;
+            width: 46px;
             &:first-of-type {
                 border-radius: 10px;
             }
         }
     }
+
     .portfolio-footer-email {
         color: #eaeaea;
         font-size: 20px;
