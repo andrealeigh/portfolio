@@ -204,6 +204,28 @@
     background-color: #ffffff;
 }
 
+/* nav styles for pages that are not the home page */
+
+.not-home-nav {
+    @include flex;
+    @include flex-align-items(baseline);
+    @include flex-direction(row);
+    @include flex-justify-content(space-between);
+    padding: 3% 5%;
+}
+.portfolio-nav {
+    .not-home-nav-name {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .not-home-nav-link {
+        margin: 0 10px;
+    }
+
+}
+
+
+
 
 /* styles for portfolio page */
 

@@ -178,6 +178,32 @@
 .process-icon {
   background-color: #ffffff; }
 
+/* nav styles for pages that are not the home page */
+.not-home-nav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  padding: 3% 5%; }
+
+.portfolio-nav .not-home-nav-name {
+  font-size: 30px;
+  margin-bottom: 0; }
+.portfolio-nav .not-home-nav-link {
+  margin: 0 10px; }
+
 /* styles for portfolio page */
 .portfolio-trinetx, .portfolio-testive-projects, .portfolio-icons {
   background-color: #ffffff;
