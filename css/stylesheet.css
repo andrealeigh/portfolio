@@ -20,16 +20,20 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
+  -webkit-align-items: baseline;
+  -ms-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
   border-bottom: solid 2px #ff008c;
-  padding: 5% 5%;
+  padding: 3% 5%;
   position: relative; }
   .portfolio-nav:after {
     background: url("../images/graffiti-alley.jpg") no-repeat left;
@@ -44,9 +48,8 @@
     z-index: -1; }
   .portfolio-nav .portfolio-nav-name {
     color: #eaeaea;
-    font-size: 50px;
-    font-weight: 300;
-    margin-bottom: 2.5%; }
+    font-size: 30px;
+    font-weight: 300; }
   .portfolio-nav .portfolio-nav-links {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -65,12 +68,15 @@
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    margin: 0 25px;
+    margin: 0 10px;
     padding: 7px 7px 2px 7px;
     transition: ease-out 0.3s; }
     .portfolio-nav .portfolio-nav-link:hover {
-      background-color: rgba(0, 0, 0, 0.4);
-      border-bottom: solid 3px #ff008c; }
+      background-color: rgba(0, 0, 0, 0.4); }
+  .portfolio-nav .portfolio-about-link {
+    border-bottom-color: #ff008c; }
+  .portfolio-nav .portfolio-page-link {
+    border-bottom-color: #ff008c; }
 
 .portfolio-about {
   padding: 100px 10%; }
@@ -178,34 +184,20 @@
 .process-icon {
   background-color: #ffffff; }
 
-/* nav styles for pages that are not the home page */
-.not-home-nav {
+/* styles for portfolio page */
+.portfolio-trinetx, .portfolio-testive-projects, .portfolio-icons {
+  background-color: #1f1f1f;
+  padding: 50px 10%;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
-  -webkit-align-items: baseline;
-  -ms-align-items: baseline;
-  -moz-align-items: baseline;
-  align-items: baseline;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between;
-  padding: 3% 5%; }
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column; }
 
-.portfolio-nav .not-home-nav-name {
-  font-size: 30px;
-  margin-bottom: 0; }
-.portfolio-nav .not-home-nav-link {
-  margin: 0 10px; }
-
-/* styles for portfolio page */
-.portfolio-trinetx, .portfolio-testive-projects, .portfolio-icons {
+.portfolio-school-analytics, .portfolio-call-congress {
   background-color: #ffffff;
   color: #1f1f1f;
   padding: 50px 10%;
@@ -217,24 +209,12 @@
   -ms-flex-direction: column;
   -moz-flex-direction: column;
   flex-direction: column; }
-  .portfolio-trinetx .portfolio-piece-header, .portfolio-testive-projects .portfolio-piece-header, .portfolio-icons .portfolio-piece-header {
+  .portfolio-school-analytics .portfolio-piece-header, .portfolio-call-congress .portfolio-piece-header {
     font-weight: 700; }
-  .portfolio-trinetx .portfolio-piece-blurb-emphasis, .portfolio-testive-projects .portfolio-piece-blurb-emphasis, .portfolio-icons .portfolio-piece-blurb-emphasis {
+  .portfolio-school-analytics .portfolio-piece-blurb-emphasis, .portfolio-call-congress .portfolio-piece-blurb-emphasis {
     font-weight: 700; }
-  .portfolio-trinetx .portfolio-piece-icon, .portfolio-testive-projects .portfolio-piece-icon, .portfolio-icons .portfolio-piece-icon {
+  .portfolio-school-analytics .portfolio-piece-icon, .portfolio-call-congress .portfolio-piece-icon {
     background-color: #1f1f1f; }
-
-.portfolio-school-analytics, .portfolio-call-congress {
-  background-color: #1f1f1f;
-  padding: 50px 10%;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column; }
 
 .portfolio-piece-icon {
   display: -ms-flexbox;
@@ -287,6 +267,12 @@
   -ms-align-items: center;
   -moz-align-items: center;
   align-items: center; }
+
+.portfolio-icons-row {
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end; }
 
 .portfolio-piece-column:first-of-type {
   margin-right: 5%;

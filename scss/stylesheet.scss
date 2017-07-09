@@ -55,10 +55,11 @@
 }
 .portfolio-nav {
     @include flex;
-    @include flex-align-items(center);
-    @include flex-direction(column);
+    @include flex-align-items(baseline);
+    @include flex-direction(row);
+    @include flex-justify-content(space-between);
     border-bottom: solid 2px #ff008c;
-    padding: 5% 5%;
+    padding: 3% 5%;
     position: relative;
     &:after {
         background: url('../images/graffiti-alley.jpg') no-repeat left;
@@ -74,9 +75,8 @@
     }
     .portfolio-nav-name{
         color: #eaeaea;
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 300;
-        margin-bottom: 2.5%;
     }
     .portfolio-nav-links {
         @include flex;
@@ -92,13 +92,18 @@
         cursor: pointer;
         font-size: 20px;
         font-weight: 700;
-        margin: 0 25px;
+        margin: 0 10px;
         padding: 7px 7px 2px 7px;
         transition: ease-out 0.3s;
         &:hover {
             background-color: rgba(0, 0, 0, 0.4);
-            border-bottom: solid 3px #ff008c;
         }
+    }
+    .portfolio-about-link {
+        border-bottom-color: #ff008c;
+    }
+    .portfolio-page-link {
+        border-bottom-color: #ff008c;
     }
 }
 
@@ -204,32 +209,16 @@
     background-color: #ffffff;
 }
 
-/* nav styles for pages that are not the home page */
-
-.not-home-nav {
-    @include flex;
-    @include flex-align-items(baseline);
-    @include flex-direction(row);
-    @include flex-justify-content(space-between);
-    padding: 3% 5%;
-}
-.portfolio-nav {
-    .not-home-nav-name {
-        font-size: 30px;
-        margin-bottom: 0;
-    }
-    .not-home-nav-link {
-        margin: 0 10px;
-    }
-
-}
-
-
-
-
 /* styles for portfolio page */
 
 .portfolio-trinetx, .portfolio-testive-projects, .portfolio-icons {
+    background-color: #1f1f1f;
+    padding: 50px 10%;
+    @include flex;
+    @include flex-direction(column);
+}
+
+.portfolio-school-analytics, .portfolio-call-congress{
     background-color: #ffffff;
     color: #1f1f1f;
     padding: 50px 10%;
@@ -244,13 +233,6 @@
     .portfolio-piece-icon {
         background-color: #1f1f1f;
     }
-}
-
-.portfolio-school-analytics, .portfolio-call-congress {
-    background-color: #1f1f1f;
-    padding: 50px 10%;
-    @include flex;
-    @include flex-direction(column);
 }
 
 .portfolio-piece-icon {
@@ -287,6 +269,9 @@
     @include flex;
     @include flex-direction(row);
     @include flex-align-items(center);
+}
+.portfolio-icons-row {
+    @include flex-align-items(flex-end);
 }
 .portfolio-piece-column:first-of-type {
     margin-right: 5%;
