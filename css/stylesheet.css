@@ -80,23 +80,23 @@
   .portfolio-nav .process-page-link {
     border-bottom-color: #ff008c; }
 
-.portfolio-about {
+.portfolio-intro {
   padding: 100px 10%; }
-  .portfolio-about .portfolio-about-blurb {
+  .portfolio-intro .portfolio-intro-blurb {
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center; }
-    .portfolio-about .portfolio-about-blurb:first-of-type {
+    .portfolio-intro .portfolio-intro-blurb:first-of-type {
       font-size: 30px;
       font-weight: 300; }
-  .portfolio-about .portfolio-about-blurb-emphasis {
+  .portfolio-intro .portfolio-intro-blurb-emphasis {
     color: #ff008c; }
-  .portfolio-about .portfolio-about-resume-link {
+  .portfolio-intro .portfolio-intro-resume-link {
     color: #eaeaea;
     cursor: pointer;
     border-bottom: solid 2px #eaeaea;
     transition: ease-out 0.3s; }
-    .portfolio-about .portfolio-about-resume-link:hover {
+    .portfolio-intro .portfolio-intro-resume-link:hover {
       border-bottom: solid 2px #ff008c;
       color: #ff008c; }
 
@@ -355,6 +355,39 @@
     font-weight: 700; }
 
 /* end process page styles */
+/* portfolio: testive marketing page styles */
+.portfolio-testive-home-page, .portfolio-testive-branding {
+  background-color: #ffffff;
+  color: #1f1f1f;
+  padding: 50px 10%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column; }
+  .portfolio-testive-home-page .portfolio-piece-header, .portfolio-testive-branding .portfolio-piece-header {
+    font-weight: 700; }
+  .portfolio-testive-home-page .portfolio-piece-blurb-emphasis, .portfolio-testive-branding .portfolio-piece-blurb-emphasis {
+    font-weight: 700; }
+  .portfolio-testive-home-page .portfolio-piece-icon, .portfolio-testive-branding .portfolio-piece-icon {
+    background-color: #1f1f1f; }
+
+.portfolio-testive-landing-page {
+  background-color: #1f1f1f;
+  padding: 50px 10%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column; }
+
+/* end portfolio: testive marketing page styles */
 /* ccn page styles */
 .portfolio-ccn-body {
   display: -ms-flexbox;
