@@ -73,10 +73,15 @@
         top: 0;
         z-index: -1;
     }
-    .portfolio-nav-name{
+    .portfolio-nav-name-link {
         color: #eaeaea;
         font-size: 30px;
         font-weight: 300;
+        transition: ease-out 0.3s;
+        &:hover {
+            color: #ff008c;
+        }
+
     }
     .portfolio-nav-links {
         @include flex;
