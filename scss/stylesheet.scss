@@ -267,6 +267,11 @@
     cursor: pointer;
     width: 300px;
 }
+.portfolio-piece-no-hover {
+    cursor: default;
+    pointer-events: none;
+    transition: none;
+}
 .portfolio-piece-header {
     color: #ff008c;
     font-size: 30px;
