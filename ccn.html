@@ -5,24 +5,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
-    <title>Andrea&rsquo;s Portfolio: Call Congress Now</title>
+    <title>Portfolio: Call Congress Now</title>
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/stylesheet.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="images/portfolio-icon.png" />
 </head>
 
-</html>
-
 <body class="portfolio">
 
-    <nav class="portfolio-nav">
-        <section class="portfolio-nav-left-side">
-            <a href="index.html" rel="home page"><h1 class="portfolio-nav-name">Andrea Leigh Williamson</h1></a>
-            <img class="portfolio-nav-title" src="images/about-me.gif" alt="about me" />
-        </section>
+    <nav class="portfolio-nav not-home-nav">
+        <h1><a class="portfolio-nav-name-link" href="index.html">Andrea Leigh Williamson</a></h1>
         <div class="portfolio-nav-links">
-            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#portfolio">PORTFOLIO</a>
-            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#about">ABOUT/CONTACT</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link not-home-nav-link" href="index.html">HOME</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link not-home-nav-link" href="portfolio.html">PORTFOLIO</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link not-home-nav-link" href="process.html">DESIGN PROCESS</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link not-home-nav-link" href="#contact">CONTACT</a>
         </div>
     </nav>
 
@@ -107,23 +104,21 @@
         </div>
     </section>
 
-    <footer class="portfolio-footer" id="about">
-        <section class="portfolio-footer-about">
-            <h3 class="portfolio-footer-about-title">ABOUT ANDREA</h3>
-            <p class="portfolio-footer-about-blurb">I am a UX/UI Designer in Cambridge, MA. Graffiti alley, picture above, is a beloved place of mine in Central Square. It is always changing, just like design.</p>
-            <p class="portfolio-footer-about-blurb">I enjoy solving complex design problems and thrive on teamwork. I have experience with education and healthcare startups and have also previously worked in healthcare. My diverse work history gives me a unique perspective on the importance of collaboration and empathy. <a class="portfolio-footer-download-cv" href="https://github.com/andrealeigh/portfolio/raw/master/UX-UI%20Designer%20Resume.pdf">Download my resume</a></p>
-        </section>
-        <section class="portfolio-footer-contact">
+    <footer class="portfolio-footer" id="contact">
+            <h3 class="portfolio-footer-about-title">CONTACT ANDREA</h3>
             <div class="portfolio-footer-social-media">
                 <a class="portfolio-footer-social-media-icon" href="https://www.linkedin.com/in/andrea-leigh-williamson" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
                 <a class="portfolio-footer-social-media-icon" href="https://dribbble.com/AndreaLeigh111" target="_blank"><img src="images/dribbble.svg" alt="dribbble"></a>
                 <a class="portfolio-footer-social-media-icon" href="https://github.com/andrealeigh" target="_blank"><img src="images/github.svg" alt="github"></a>
+                <a class="portfolio-footer-social-media-icon" href="mailto:leigh.andrea@gmail.com" target="_blank"><img src="images/email.svg" alt="email"></a>
             </div>
-            <h5 class="portfolio-footer-email">leigh.andrea@gmail.com</h5>
-        </section>
+            <a class="portfolio-about-resume-link" href="andrea-designer-resume.pdf" target="_blank">Download Resume</a>
     </footer>
 
     <script src="js/smooth-scroll.min.js"></script>
     <script>smoothScroll.init();</script>
 
 </body>
+
+</html>
+

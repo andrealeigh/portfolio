@@ -5,7 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
-    <title>Andrea&rsquo;s Portfolio: Design Process</title>
+    <title>Design Process</title>
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/stylesheet.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="images/portfolio-icon.png" />
@@ -16,22 +16,21 @@
 <body class="portfolio">
 
     <nav class="portfolio-nav">
-        <section class="portfolio-nav-left-side">
-            <a href="index.html" rel="home page"><h1 class="portfolio-nav-name">Andrea Leigh Williamson</h1></a>
-            <img class="portfolio-nav-title" src="images/about-me.gif" alt="about me" />
-        </section>
+        <h1><a class="portfolio-nav-name-link" href="index.html">Andrea Leigh Williamson</a></h1>
         <div class="portfolio-nav-links">
-            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="index.html#portfolio">PORTFOLIO</a>
-            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="index.html#about">ABOUT/CONTACT</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="index.html">HOME</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="portfolio.html">PORTFOLIO</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link process-page-link" href="#process">DESIGN PROCESS</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#contact">CONTACT</a>
         </div>
     </nav>
 
-    <section class="portfolio-process-body" id="design-process-body">
-        <div class="portfolio-process-intro">
-            <h2 class="portfolio-process-title"><span class="portfolio-process-title-emphasis">DESIGN PROCESS:</span> Key Steps</h2>
-           <p class="portfolio-process-blurb-intro">The following describes key steps in my design process. It works best when I collaborate closely with others. Although the steps are presented here sequentially, I find that the design process is rarely linear. Sometimes elements in a step are skipped or iterated multiple times.</p>
-            <p class="portfolio-process-intro-emphasis">It all depends on the nature and goals of the project.</p>
-        </div>
+    <div class="portfolio-intro" id="process">
+        <p class="portfolio-intro-blurb"><span class="portfolio-intro-blurb-emphasis">My design process</span> contains five key steps.</p>
+        <p class="portfolio-intro-blurb">It works best when I collaborate closely with others. Although the steps are presented here sequentially, I find that the design process is rarely linear. It all depends on the nature and goals of the project.</p>
+    </div>
+
+    <section class="portfolio-process-body" >
         <div class="portfolio-process-row">
             <img class="portfolio-process-design-img" src="images/design-discover.png" alt="discovery" />
             <div class="portfolio-process-column">
@@ -102,20 +101,15 @@
 
     </section>
 
-    <footer class="portfolio-footer" id="about">
-        <section class="portfolio-footer-about">
-            <h3 class="portfolio-footer-about-title">ABOUT ANDREA</h3>
-            <p class="portfolio-footer-about-blurb ">I am a UX/UI Designer in Cambridge, MA. Graffiti alley, picture above, is a beloved place of mine in Central Square. It is always changing, just like design.</p>
-            <p class="portfolio-footer-about-blurb ">I enjoy solving complex design problems and thrive on teamwork. I have experience with education and healthcare startups and have also previously worked in healthcare. My diverse work history gives me a unique perspective on the importance of collaboration and empathy. <a class="portfolio-footer-download-cv" href="https://github.com/andrealeigh/portfolio/raw/master/UX-UI%20Designer%20Resume.pdf">Download my resume</a></p>
-        </section>
-        <section class="portfolio-footer-contact">
+    <footer class="portfolio-footer" id="contact">
+            <h3 class="portfolio-footer-about-title">CONTACT ANDREA</h3>
             <div class="portfolio-footer-social-media">
                 <a class="portfolio-footer-social-media-icon" href="https://www.linkedin.com/in/andrea-leigh-williamson" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
                 <a class="portfolio-footer-social-media-icon" href="https://dribbble.com/AndreaLeigh111" target="_blank"><img src="images/dribbble.svg" alt="dribbble"></a>
                 <a class="portfolio-footer-social-media-icon" href="https://github.com/andrealeigh" target="_blank"><img src="images/github.svg" alt="github"></a>
+                <a class="portfolio-footer-social-media-icon" href="mailto:leigh.andrea@gmail.com" target="_blank"><img src="images/email.svg" alt="email"></a>
             </div>
-            <h5 class="portfolio-footer-email">leigh.andrea@gmail.com</h5>
-        </section>
+            <a class="portfolio-about-resume-link" href="andrea-designer-resume.pdf" target="_blank">Download Resume</a>
     </footer>
 
     <script src="js/smooth-scroll.min.js"></script>

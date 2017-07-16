@@ -42,23 +42,24 @@
     flex-wrap: $wrap;
 }
 
-/* styles for andrea's portfolio */
+/* styles for home page */
 
 .portfolio {
     @include flex;
     @include flex-direction(column);
-    color: #1f1f1f;
+    background-color: #1f1f1f;
+    color: #eaeaea;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 .portfolio-nav {
     @include flex;
-    @include flex-align-items(flex-end);
+    @include flex-align-items(baseline);
     @include flex-direction(row);
     @include flex-justify-content(space-between);
     border-bottom: solid 2px #ff008c;
-    padding: 5% 5%;
+    padding: 40px 5%;
     position: relative;
     &:after {
         background: url('../images/graffiti-alley.jpg') no-repeat left;
@@ -66,40 +67,246 @@
         bottom: 0;
         content: "";
         left: 0;
-        opacity: 0.4;
+        opacity: 0.15;
         position: absolute;
         right: 0;
         top: 0;
         z-index: -1;
     }
-    .portfolio-nav-left-side {
-        @include flex;
-        @include flex-direction(column);
+    .portfolio-nav-name-link {
+        color: #eaeaea;
+        font-size: 30px;
+        font-weight: 300;
+        transition: ease-out 0.3s;
+        &:hover {
+            color: #ff008c;
+        }
+
     }
-    .portfolio-nav-name {
-        color: #1f1f1f;
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 2%;
-        text-shadow: 0px 0px 10px #ffffff;
+    .portfolio-nav-links {
+        @include flex;
+        @include flex-direction(row);
     }
     .portfolio-nav-title {
         width: 445px;
     }
     .portfolio-nav-link {
-        background-color: rgba(255, 255, 255, 0.6);
-        border-bottom: none;
-        color: #1f1f1f;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-bottom: solid 3px #000000;
+        color: #eaeaea;
+        cursor: pointer;
         font-size: 20px;
         font-weight: 700;
-        margin: 0 25px;
-        padding: 7px;
+        margin: 0 10px;
+        padding: 7px 7px 2px 7px;
         transition: ease-out 0.3s;
         &:hover {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-bottom: solid 6px #ff008c;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+    .portfolio-about-link {
+        border-bottom-color: #ff008c;
+    }
+    .portfolio-page-link {
+        border-bottom-color: #ff008c;
+    }
+    .process-page-link {
+        border-bottom-color: #ff008c;
+    }
+}
+
+.portfolio-intro {
+    padding: 100px 10%;
+    .portfolio-intro-blurb {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        &:first-of-type {
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+    .portfolio-intro-blurb-emphasis {
+        color: #ff008c;
+    }
+    .portfolio-intro-resume-link {
+        color: #eaeaea;
+        cursor: pointer;
+        border-bottom: solid 2px #eaeaea;
+        transition: ease-out 0.3s;
+        &:hover {
+            border-bottom: solid 2px #ff008c;
             color: #ff008c;
         }
+    }
+}
+
+.portfolio-portfolio {
+    background-color: #ffffff;
+    color: #1f1f1f;
+    padding: 75px 10%;
+    @include flex;
+    @include flex-direction(column);
+    .portfolio-portfolio-header {
+        color: #ff008c;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.portfolio-philosophy {
+    background-color: #1f1f1f;
+    padding: 75px 10%;
+    @include flex;
+    @include flex-direction(column);
+    .portfolio-philosophy-header {
+        color: #ff008c;
+        font-size: 30px;
+        font-weight: 300;
+
+    }
+}
+
+.portfolio-content-row {
+    @include flex;
+    @include flex-direction(row);
+    @include flex-align-items(flex-start);
+}
+.portfolio-content-column:first-of-type {
+    margin-right: 5%;
+}
+.portfolio-content-blurb {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.portfolio-content-list {
+    margin-left: 30px;
+}
+.portfolio-content-list-item {
+    margin-bottom: 5px;
+    font-size: 16px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.portfolio-icon {
+        background-color: #1f1f1f;
+        border: 3px solid #1f1f1f;
+        box-sizing: content-box;
+        cursor: pointer;
+        height: 250px;
+        margin: 1.5%;
+        opacity: 1;
+        padding: 0;
+        position: relative;
+        transition: ease-out 0.3s;
+        width: 325px;
+        &:hover {
+            border: 3px solid #ff008c;
+            opacity: 0.8;
+        }
+        .portfolio-icon-image {
+            cursor: pointer;
+            transition: ease-out 0.3s;
+            width: 300px;
+        }
+}
+
+.process-icon {
+    background-color: #ffffff;
+}
+
+/* styles for portfolio page */
+
+.portfolio-trinetx, .portfolio-testive-projects, .portfolio-icons {
+    background-color: #1f1f1f;
+    padding: 50px 10%;
+    @include flex;
+    @include flex-direction(column);
+}
+
+.portfolio-school-analytics, .portfolio-call-congress{
+    background-color: #ffffff;
+    color: #1f1f1f;
+    padding: 50px 10%;
+    @include flex;
+    @include flex-direction(column);
+    .portfolio-piece-header {
+        font-weight: 700;
+    }
+    .portfolio-piece-blurb-emphasis {
+        font-weight: 700;
+    }
+    .portfolio-piece-icon {
+        background-color: #1f1f1f;
+    }
+}
+
+.portfolio-piece-icon {
+        @include flex;
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
+        background-color: #ffffff;
+        border: 3px solid #1f1f1f;
+        box-sizing: content-box;
+        cursor: pointer;
+        height: 250px;
+        margin: 1.5%;
+        opacity: 1;
+        padding: 0;
+        position: relative;
+        transition: ease-out 0.3s;
+        width: 325px;
+        &:hover {
+            border: 3px solid #ff008c;
+            opacity: 0.8;
+        }
+}
+.portfolio-piece-icon-image {
+    cursor: pointer;
+    width: 300px;
+}
+.portfolio-piece-no-hover {
+    cursor: default;
+    pointer-events: none;
+    transition: none;
+}
+.portfolio-piece-header {
+    color: #ff008c;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.portfolio-piece-row {
+    @include flex;
+    @include flex-direction(row);
+    @include flex-align-items(center);
+}
+.portfolio-icons-row {
+    @include flex-align-items(flex-end);
+}
+.portfolio-piece-column:first-of-type {
+    margin-right: 5%;
+    margin-top: 15px;
+}
+.portfolio-piece-blurb {
+    margin-bottom: 15px;
+}
+.portfolio-piece-blurb-emphasis {
+    color: #ff008c;
+    font-weight: 300;
+}
+.portfolio-piece-blurb-emphasis-black {
+    font-weight: 700;
+}
+.portfolio-piece-list {
+    margin-left: 30px;
+}
+.portfolio-piece-list-item {
+    margin-bottom: 5px;
+    &:last-of-type {
+        margin-bottom: 0;
     }
 }
 
@@ -108,45 +315,18 @@
 .portfolio-process-body {
     @include flex;
     @include flex-direction(column);
-    .portfolio-process-intro {
-        @include flex;
-        @include flex-direction(column);
-        @include flex-align-items(center);
-        background-color: #1f1f1f;
-        border-bottom: solid 3px #b0e9f7;
-        color: #eaeaea;
-        margin-bottom: 50px;
-        padding: 50px 10%;
-    }
-    .portfolio-process-title {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            text-align: center;
-    }
-    .portfolio-process-title-emphasis {
-            color: #ff008c;
-            font-weight: 300;
-    }
-    .portfolio-process-blurb-intro {
-        font-size: 18px;
-        max-width: 735px;
-        text-align: center;
-    }
-    .portfolio-process-intro-emphasis {
-        font-size: 22px;
-        font-weight: 700;
-        margin-top: 15px;
-    }
     .portfolio-process-row {
         @include flex;
         @include flex-direction(row);
-        margin: 25px 10%;
+        background-color: #ffffff;
+        color: #1f1f1f;
+        padding: 25px 10%;
         &:first-of-type {
-            margin-top: 50px;
+            border-top: solid 3px #b0e9f7;
+            padding-top: 100px;
         }
         &:last-of-type {
-            margin-bottom: 75px;
+            padding-bottom: 100px;
         }
     }
     .portfolio-process-design-img {
@@ -183,11 +363,45 @@
 /* end process page styles */
 
 
+/* portfolio: testive marketing page styles */
+
+
+.portfolio-testive-home-page, .portfolio-testive-branding {
+    background-color: #ffffff;
+    color: #1f1f1f;
+    padding: 50px 10%;
+    @include flex;
+    @include flex-direction(column);
+    .portfolio-piece-header {
+        font-weight: 700;
+    }
+    .portfolio-piece-blurb-emphasis {
+        font-weight: 700;
+    }
+    .portfolio-piece-icon {
+        background-color: #1f1f1f;
+    }
+}
+
+
+.portfolio-testive-landing-page {
+    background-color: #1f1f1f;
+    padding: 50px 10%;
+    @include flex;
+    @include flex-direction(column);
+}
+
+
+/* end portfolio: testive marketing page styles */
+
+
 /* ccn page styles */
 
 .portfolio-ccn-body {
     @include flex;
     @include flex-direction(column);
+    background-color: #ffffff;
+    color: #1f1f1f;
     .portfolio-ccn-intro {
         @include flex;
         @include flex-direction(column);
@@ -223,7 +437,8 @@
         transition: ease-out 0.3s;
         width: 100%;
         &:hover {
-            opacity: 0.5;
+            border-color: #ff008c;
+            opacity: 0.8;
         }
     }
     .portfolio-ccn-process {
@@ -321,122 +536,6 @@
 
 /* end ccn page styles */
 
-.portfolio-row {
-    @include flex;
-    @include flex-direction(row);
-    @include flex-justify-content(center);
-    @include flex-wrap(wrap);
-    margin: 7%;
-    .portfolio-icon {
-        background-color: #ffffff;
-        border: 2px solid #1f1f1f;
-        box-sizing: content-box;
-        cursor: pointer;
-        height: 300px;
-        margin: 1.5%;
-        padding: 0;
-        position: relative;
-        transition: ease-out 0.3s;
-        width: 300px;
-        .portfolio-icon-image {
-            opacity: 1;
-            transition: ease-out 0.3s;
-            width: 300px;
-        }
-        .portfolio-icon-title {
-            bottom: 114px;
-            color: #1f1f1f;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 1.5;
-            opacity: 0;
-            position: absolute;
-            text-align: center;
-            transition: ease-out 0.3s;
-            width: 100%;
-        }
-        &:hover {
-            border-color: #ff008c;
-            .portfolio-icon-image {opacity: 0.1;}
-            .portfolio-icon-title {opacity: 1;}
-        }
-    }
-
-}
-
-.portfolio-modal {
-    animation-duration: 0.4s;
-    animation-name: fadeIn;
-    background-color: rgba(255,255,255,0.8);
-    display: none;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    .portfolio-modal-content {
-        animation-duration: 0.4s;
-        animation-name: slideIn;
-        background-color: #ffffff;
-        bottom: 0;
-        border: 2px solid #1f1f1f;
-        height: 100%;
-        left: 0;
-        max-width: 600px;
-        overflow: scroll;
-        position: fixed;
-    }
-    .portfolio-modal-header {
-        @include flex;
-        @include flex-direction(row);
-        @include flex-align-items(center);
-        @include flex-justify-content(space-between);
-        background-color: #1f1f1f;
-        color: #eaeaea;
-        font-size: 20px;
-        font-weight: 700;
-        padding: 10px 25px;
-    }
-    .portfolio-modal-close-icon {
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: bold;
-        transition: ease-out 0.3s;
-        &:hover {
-            color: #ff008c;
-            cursor: pointer;
-            text-decoration: none;
-        }
-    }
-    .portfolio-modal-body {
-        padding: 25px;
-    }
-    .portfolio-modal-gif {
-        border: 2px solid #1f1f1f;
-        margin-bottom: 15px;
-    }
-    .portfolio-modal-paragraph {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-    .portfolio-modal-link {
-        border-bottom: 2px solid #1f1f1f;
-        color: #1f1f1f;
-        font-size: 16px;
-        margin: 0 10px 10px 0;
-        transition: ease-out 0.3s;
-        width: 168px;
-        &:last-of-type {
-            width: 235px;
-        }
-        &:hover {
-            border-bottom: 6px solid #ff008c;
-            color: #ff008c;
-        }
-    }
-}
-
 @keyframes slideIn {
     from {left: -300px; opacity: 0}
     to {left: 0; opacity: 1}
@@ -449,68 +548,78 @@
 
 .portfolio-footer {
     @include flex;
-    @include flex-direction(row);
-    @include flex-align-items(flex-start);
-    @include flex-justify-content(space-between);
-    background-color: #1f1f1f;
+    @include flex-direction(column);
+    border-top: solid 2px #ff008c;
     color: #eaeaea;
-    padding: 7%;
-    .portfolio-footer-about {
-        @include flex;
-        @include flex-direction(column);
-        color: #eaeaea;
-        max-width: 660px;
-        padding-right: 4.5%;
+    padding: 90px 7%;
+    position: relative;
+    &:after {
+        background: url('../images/graffiti-alley.jpg') no-repeat left;
+        background-size: cover;
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0.15;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
     }
     .portfolio-footer-about-title {
         color: #ff008c;
         font-size: 30px;
         font-weight: 700;
-        margin-bottom: 20px;
-    }
-    .portfolio-footer-about-blurb {
-        padding-bottom: 15px;
-    }
-    .portfolio-footer-download-cv {
-        border-bottom: solid 1px #ffffff;
-        color: #ffffff;
-        font-size: 16px;
-        transition: ease-out 0.3s;
-        width: 195px;
-        &:hover {
-            border-bottom: solid 6px #ff008c;
-            color: #ff008c;
-        }
-    }
-    .portfolio-footer-contact {
-        @include flex;
-        @include flex-direction(column);
+        margin-bottom: 5px;
     }
     .portfolio-footer-social-media {
         @include flex;
         @include flex-direction(row);
     }
     .portfolio-footer-social-media-icon {
-        background-color: #1f1f1f;
+        background-color: rbga(0,0,0,1);
         border-radius: 50%;
-        height: 40px;
+        height: 46px;
         margin: 0 25px 15px 0;
         transition: ease-out 0.3s;
-        width: 40px;
+        width: 46px;
+        &:first-of-type {
+            height: 43px;
+            width: 43px;
+        }
         &:hover {
             background-color: #ff008c;
-            height: 40px;
-            width: 40px;
+            height: 46px;
+            width: 46px;
             &:first-of-type {
+                height: 43px;
+                width: 43px;
                 border-radius: 10px;
+            }
+            &:last-of-type {
+                border-radius: 13px;
             }
         }
     }
+
     .portfolio-footer-email {
         color: #eaeaea;
-        font-size: 28px;
-        font-weight: 100;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
     }
+    .portfolio-about-resume-link {
+        color: #eaeaea;
+        cursor: pointer;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        transition: ease-out 0.3s;
+        width: 170px;
+        &:hover {
+            color: #ff008c;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 975px) {

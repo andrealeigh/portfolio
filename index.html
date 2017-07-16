@@ -5,7 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
-    <title>Andrea&rsquo;s Portfolio</title>
+    <title>Andrea Leigh Williamson</title>
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/stylesheet.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="images/portfolio-icon.png" />
@@ -14,256 +14,67 @@
 <body class="portfolio">
 
     <nav class="portfolio-nav home-nav">
-        <section class="portfolio-nav-left-side">
-            <h1 class="portfolio-nav-name">Andrea Leigh Williamson</h1>
-            <img class="portfolio-nav-title" src="images/about-me.gif" alt="about me" />
-        </section>
+        <h1><a class="portfolio-nav-name-link" href="index.html">Andrea Leigh Williamson</a></h1>
         <div class="portfolio-nav-links">
-            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#portfolio">PORTFOLIO</a>
-            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#about">ABOUT/CONTACT</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link portfolio-about-link" href="#about">ABOUT</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="portfolio.html">PORTFOLIO</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="process.html">DESIGN PROCESS</a>
+            <a data-scroll data-options='{ "easing": "easeOutCubic" }' class="portfolio-nav-link" href="#contact">CONTACT</a>
         </div>
     </nav>
 
-    <section class="portfolio-body" id="portfolio">
-        <div class="portfolio-row">
-            <button class="portfolio-icon">
-                    <img class="portfolio-icon-image" src="images/trinetx-logo.png" alt="call congress now preview" />
-                    <h2 class="portfolio-icon-title">Projects from TriNetX, Inc.</h2>
-            </button>
-            <div class="portfolio-modal">
-                <div class="portfolio-modal-content">
-                    <div class="portfolio-modal-header">
-                        <h3>Projects from TriNetX, Inc.</h3>
-                        <span class="portfolio-modal-close-icon">&times;</span>
-                    </div>
-                    <div class="portfolio-modal-body">
-                        <img style="padding-bottom: 20px;" src="images/trinetx-logo.png" alt="trinetx logo" />
-                        <p class="portfolio-modal-paragraph">I am currently working as a contract UX/UI designer at a B2B healthcare startup in Cambridge, MA. I am focused on creating wireframes, pixel-perfect mockups, and interactive prototypes for their web app redesign.</p>
-                        <p class="portfolio-modal-paragraph">I work closely with the product team to push for more user research and testing in order to make more informed design decisions, and I continue to evolve and standardize their style guide and UI. I also work with complicated data sets and logic interactions, and I strive to use mock data that is representative of real data in my designs.</p>
-                        <p class="portfolio-modal-paragraph">I am not able to share my work from TriNetX publicly, but I would be happy to explore it in a controlled interview setting.</p>
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="portfolio-intro">
+    <p class="portfolio-intro-blurb"><span class="portfolio-intro-blurb-emphasis">I am a UX/UI designer</span> in the Greater Boston Area.</p>
+    <p class="portfolio-intro-blurb">My work experience includes designing for B2B and B2C web products within education and healthcare startups.<br>I previously worked in healthcare and learned a lot about humans. <a class="portfolio-intro-resume-link" href="andrea-designer-resume.pdf" target="_blank">Download Resume</a></p>
+    </section>
 
-            <button class="portfolio-icon"><a href="process.html#design-process-body" rel="portfolio-design-process">
-                <img class="portfolio-icon-image" src="images/design-design.png" alt="design process preview" />
-                <h2 class="portfolio-icon-title">Design Process:<br>Overview</h2>
-            </a></button>
-            <button class="portfolio-icon"><a href="ccn.html#ccn-process-body" rel="portfolio-design-process-ccn">
-                <img class="portfolio-icon-image" src="images/call-congress-now-preview.png" alt="call congress now preview" />
-                <h2 class="portfolio-icon-title">Case Study:<br>Call Congress Now</h2>
-             </a></button>
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/prototype1-gif.gif" alt="prototype: school landing page" />
-            <h2 class="portfolio-icon-title">HTML/SCSS Prototype:<br>School Landing Page</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>HTML/SCSS Prototype: School Landing Page</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/school-page-prototype-preview.gif" alt="school page prototype preview" />
-                    <p class="portfolio-modal-paragraph">This HTML/SCSS prototype was made for Testive, Inc. It was version 1 of the HTML/SCSS associated with the School Landing Page Mockup, which is also here in my portfolio (click on the item in the top left corner of my portfolio).</p>
-                    <p class="portfolio-modal-paragraph">The gray box in the second row is a video placeholder. This wireframe for desktop only: The landing page would only be accessed on school computers and not on smaller handheld devices (read full details on Github).</p>
-                    <a class="portfolio-modal-link" href="https://andrealeigh.github.io/testive_portfolio/school_landing_page/index.html" target="_blank">Visit website</a>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio#school-landing-page-wireframe" target="_blank">Read full details on Github</a>
-                </div>
+    <section class="portfolio-portfolio">
+        <div class="portfolio-content-row">
+                <div class="portfolio-content-column">
+                <button class="portfolio-icon"><a href="portfolio.html" rel="portfolio-design-process">
+                    <img class="portfolio-icon-image" src="images/ps-portfolio.png" alt="portfolio page link" />
+                </a></button>
             </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/prototype2-gif.gif" alt="prototype: testive home page" />
-            <h2 class="portfolio-icon-title">HTML/SCSS Prototype:<br>Testive Home Page</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>HTML/SCSS Prototype: Testive Home Page</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/home-page-prototype-preview.gif" alt="home page protoype preview" />
-                    <p class="portfolio-modal-paragraph">This HTML/SCSS prototype was made for Testive, Inc. It was version 1 of Testive&rsquo;s new home page redesign, which included new content and an overhaul of the user interface.</p>
-                    <p class="portfolio-modal-paragraph">I collaborated with Marketing and Sales on content and design. The home page went through multiple pen/paper and high fidelity mockups, which was reviewed and approved by Marketing/Sales before the prototype was built.</p>
-                    <a class="portfolio-modal-link" href="https://andrealeigh.github.io/testive_portfolio/testive_home_page/index.html" target="_blank">Visit website</a>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio#testive-home-page-wireframe" target="_blank">Read full details on Github</a>
-                </div>
+            <div class="portfolio-content-column">
+                <h2 class="portfolio-portfolio-header">Portfolio</h2>
+                <p class="portfolio-content-blurb">View selected pieces from my work with education startups, healthcare startups, and open source projects by clicking the left image:</p>
+                <ul class="portfolio-content-list">
+                    <li class="portfolio-content-list-item">B2C education product design</li>
+                    <li class="portfolio-content-list-item">B2B healthcare clinical trial product design</li>
+                    <li class="portfolio-content-list-item">Marketing websites and related deliverables</li>
+                    <li class="portfolio-content-list-item">Graphic design: Logos &amp; icons</li>
+                </ul>
             </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/mockup1-screenshot.png" alt="mockup: school landing page" />
-            <h2 class="portfolio-icon-title">Mockup:<br>School Landing Page</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>Mockup: School Landing Page</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/school-landing-page-mockup-preview.gif" alt="school landing page mockup preview" />
-                    <p class="portfolio-modal-paragraph">This mockup was made for Testive, Inc. It is a high fidelity mockup that I created in Adobe Illustrator and exported as a PDF file. It depicts a custom landing page for high schools that were considering signing up to study for the SAT/ACT with Testive.</p>
-                    <p class="portfolio-modal-paragraph">The final product followed a series of low-fidelity mockups (paper and pencil drawings), collaboration meetings with project developers, and feedback from Testive&rsquo;s Director of School Partnerships, who worked closely with school administrators and teachers.</p>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio/raw/master/high_fidelity_mockups/school_landing_page.pdf">Download Mockup</a>
-                 </div>
-            </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/mockup2-screenshot.png" alt="mockup: school analytics" />
-            <h2 class="portfolio-icon-title">Mockup:<br>School Analytics</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>Mockup: School Analytics Dashboard</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/school-analytics-mockup-preview.gif" alt="school analytics mockup preview" />
-                    <p class="portfolio-modal-paragraph">This mockup was made for Testive, Inc. It is a high fidelity mockup that I created in Adobe Illustrator and exported as a PDF file. It depicts an analytics dashboard that helps high school teachers track students using Testive software to study for the SAT/ACT.</p>
-                    <p class="portfolio-modal-paragraph">The final product followed a series of low-fidelity mockups (paper and pencil drawings), collaboration meetings with project developers, and feedback from Testive&rsquo;s Director of School Partnerships, who worked closely with school administrators and teachers.</p>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio/raw/master/high_fidelity_mockups/school_analytics.pdf">Download Mockup</a>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio#school-analytics-mockup" target="_blank">Read full details on Github</a>
-                 </div>
-            </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/design-develop.png" alt="design process icon" />
-            <h2 class="portfolio-icon-title">Icon:<br>Design Process</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>Icon: Design Process</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/design-develop.png" alt="design procss icon" />
-                    <p class="portfolio-modal-paragraph">This cloud is part of a series of visuals I created to better describe my design process. It was created using Adobe Illustrator. Click on the link below to read more about how I think about design.</p>
-                    <a class="portfolio-modal-link" href="process.html#design-process-body">Design Process</a>
-                 </div>
-            </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/call-congress-now.svg" alt="call congress now icon" />
-            <h2 class="portfolio-icon-title">Icon:<br>Call Congress Now</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>Call Congress Now</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif ccn-icon" src="images/call-congress-now.svg" alt="call congress now icon" />
-                    <p class="portfolio-modal-paragraph">Call Congress Now is a responsive web app I designed and co-developed. The purpose of the application is to encourage citizens to call their Representatives and Senators by providing calling information in a user-friendly way.</p>
-                    <p class="portfolio-modal-paragraph">The icon I created for Call Congress Now was inspired by the upside down flag on House of Cards. It was created using Adobe Illustrator.</p>
-                    <a class="portfolio-modal-link" href="ccn.html#ccn-process-body">Design Process: Call Congress Now</a>
-                    <a class="portfolio-modal-link" href="https://call-congress-now.herokuapp.com/">Visit Website</a>
-                 </div>
-            </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/color-guide-screenshot.png" alt="testive color guide" />
-            <h2 class="portfolio-icon-title">Branding:<br>Testive Color Guide</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>Branding: Testive Color Guide</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/testive-color-guide-preview.gif" alt="testive color guide" />
-                    <p class="portfolio-modal-paragraph">This was a style guide I made after I noticed that Testive&rsquo;s development and marketing team were using varied hex values for colors. In order to encourage standardized usage of colors across Testive&rsquo;s website, app, and marketing tools, I created a style guide with specific hex values, names for each color, and suggested use cases.</p>
-                    <p class="portfolio-modal-paragraph">In addition to suggested use cases, I added a few informational bullet points called &ldquo;General Color Advice,&rdquo; which were intended to provide a starting point and a larger discussion of Testive&rsquo;s visual style.</p>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio/raw/master/testive_color_guide.pdf">Download Color Guide</a>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio#testive-color-guide" target="_blank">Read full details on Github</a>
-                 </div>
-            </div>
-        </div>
-
-        <button class="portfolio-icon">
-            <img class="portfolio-icon-image" src="images/modals-screenshot.png" alt="small app projects: modals" />
-            <h2 class="portfolio-icon-title">Small App Projects:<br>Modal Designs</h2>
-        </button>
-        <div class="portfolio-modal">
-            <div class="portfolio-modal-content">
-                <div class="portfolio-modal-header">
-                    <h3>Small App Projects: Modal Designs</h3>
-                    <span class="portfolio-modal-close-icon">&times;</span>
-                </div>
-                <div class="portfolio-modal-body">
-                    <img class="portfolio-modal-gif" src="images/modal-designs-preview.gif" alt="modal designs preview" />
-                    <p class="portfolio-modal-paragraph">This is a screenshot of two modals I designed within the Testive app. Once a month, I changed the modal within the Testive app to reflect the current month&rsquo;s offer.</p>
-                    <p class="portfolio-modal-paragraph">The monthly changes included updating the text content, creating a custom image in Illustrator, and changing the text color to match the new background image. Each month, I created a new modal design and HTML/SCSS prototype, and I paired with a developer to enable Javascript functionality.</p>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio/raw/master/testive_modals.pdf">Download Mockup</a>
-                    <a class="portfolio-modal-link" href="https://github.com/andrealeigh/testive_portfolio#testive-app-modals-screenshots" target="_blank">Read full details on Github</a>
-                 </div>
-            </div>
-        </div>
         </div>
     </section>
 
-    <footer class="portfolio-footer" id="about">
-        <section class="portfolio-footer-about">
-            <h3 class="portfolio-footer-about-title">ABOUT ANDREA</h3>
-            <p class="portfolio-footer-about-blurb ">I am a UX/UI Designer in Cambridge, MA. Graffiti alley, picture above, is a beloved place of mine in Central Square. It is always changing, just like design.</p>
-            <p class="portfolio-footer-about-blurb ">I enjoy solving complex design problems and thrive on teamwork. I have experience with education and healthcare startups and have also previously worked in healthcare. My diverse work history gives me a unique perspective on the importance of collaboration and empathy. <a class="portfolio-footer-download-cv" href="https://github.com/andrealeigh/portfolio/raw/master/UX-UI%20Designer%20Resume.pdf">Download my resume</a></p>
-        </section>
-        <section class="portfolio-footer-contact">
+    <section class="portfolio-philosophy">
+        <div class="portfolio-content-row">
+            <div class="portfolio-content-column">
+                <h2 class="portfolio-philosophy-header">Design Process</h2>
+                <p class="portfolio-content-blurb">I strive to work collaboratively and with low ego. I rely on research-based design principles, qualitative data from users, and quantitative data from analytics/testing to inform design decisions. Read more about my design process by clicking the right image.</p>
+            </div>
+            <div class="portfolio-content-column">
+                <button class="portfolio-icon process-icon"><a href="process.html#design-process-body" rel="portfolio-design-process">
+                    <img class="portfolio-icon-image" src="images/ps-design.png" alt="design process link" />
+                </a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="portfolio-footer" id="contact">
+            <h3 class="portfolio-footer-about-title">CONTACT ANDREA</h3>
             <div class="portfolio-footer-social-media">
                 <a class="portfolio-footer-social-media-icon" href="https://www.linkedin.com/in/andrea-leigh-williamson" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
                 <a class="portfolio-footer-social-media-icon" href="https://dribbble.com/AndreaLeigh111" target="_blank"><img src="images/dribbble.svg" alt="dribbble"></a>
                 <a class="portfolio-footer-social-media-icon" href="https://github.com/andrealeigh" target="_blank"><img src="images/github.svg" alt="github"></a>
+                <a class="portfolio-footer-social-media-icon" href="mailto:leigh.andrea@gmail.com" target="_blank"><img src="images/email.svg" alt="email"></a>
             </div>
-            <h5 class="portfolio-footer-email">leigh.andrea@gmail.com</h5>
-        </section>
+            <a class="portfolio-about-resume-link" href="andrea-designer-resume.pdf" target="_blank">Download Resume</a>
     </footer>
 
     <script src="js/smooth-scroll.min.js"></script>
     <script>smoothScroll.init();</script>
-
-    <script>
-        var modals = document.getElementsByClassName("portfolio-modal");
-
-        var defineClicks = function(modal) {
-
-            // Get the button that opens the modals in portfolio
-            var btn = modal.previousElementSibling;
-            // Get the <span> element that closes the modal
-            var span = modal.querySelector('.portfolio-modal-close-icon');
-
-            // When the user clicks the button, open the modal
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-        };
-
-        for (var i = 0; i < modals.length; i++) {
-            defineClicks(modals[i]);
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target.className == 'portfolio-modal') {
-                event.target.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 
