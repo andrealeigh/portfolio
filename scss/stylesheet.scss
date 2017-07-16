@@ -59,7 +59,7 @@
     @include flex-direction(row);
     @include flex-justify-content(space-between);
     border-bottom: solid 2px #ff008c;
-    padding: 3% 5%;
+    padding: 40px 5%;
     position: relative;
     &:after {
         background: url('../images/graffiti-alley.jpg') no-repeat left;
@@ -551,7 +551,7 @@
     @include flex-direction(column);
     border-top: solid 2px #ff008c;
     color: #eaeaea;
-    padding: 7%;
+    padding: 90px 7%;
     position: relative;
     &:after {
         background: url('../images/graffiti-alley.jpg') no-repeat left;

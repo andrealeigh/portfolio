@@ -33,7 +33,7 @@
   -moz-justify-content: space-between;
   justify-content: space-between;
   border-bottom: solid 2px #ff008c;
-  padding: 3% 5%;
+  padding: 40px 5%;
   position: relative; }
   .portfolio-nav:after {
     background: url("../images/graffiti-alley.jpg") no-repeat left;
@@ -587,7 +587,7 @@
   flex-direction: column;
   border-top: solid 2px #ff008c;
   color: #eaeaea;
-  padding: 7%;
+  padding: 90px 7%;
   position: relative; }
   .portfolio-footer:after {
     background: url("../images/graffiti-alley.jpg") no-repeat left;
